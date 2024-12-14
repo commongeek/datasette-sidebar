@@ -1,9 +1,10 @@
-![image](https://github.com/user-attachments/assets/af8cbd9e-cc14-44f7-85d4-70913ca84384)[![Changelog](https://img.shields.io/github/v/release/commongeek/datasette-sidebar?include_prereleases&label=changelog)](https://github.com/commongeek/datasette-quickchart/releases)
+[![Changelog](https://img.shields.io/github/v/release/commongeek/datasette-sidebar?include_prereleases&label=changelog)](https://github.com/commongeek/datasette-sidebar/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/commongeek/datasette-sidebar/blob/main/LICENSE)
 
 # datasette-sidebar
 A simple plugin for Datasette that adds a sidebar with a list of tables and views.
-An icon opening the sidebar is added in the lower left corner: ![icon](screenshots/icon.png)
+An icon opening the sidebar is added in the lower left corner:
+![icon](screenshots/icon.png)
 
 ## Requirements
 
@@ -29,4 +30,3 @@ If you want to host locally you need to copy the sidebar.js file to your static 
 
 ## Screenshot
 
-![Sidebar](screenshots/sidebar.png)
