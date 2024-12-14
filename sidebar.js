@@ -117,6 +117,13 @@ const SidebarPlugin = (function() {
         btn.id = 'sidebar-open';
         document.querySelector('.not-footer').prepend(btn);
         injectCss();
+        document.addEventListener('click', (ev) => {
+            const target = ev.target;
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar && !sidebar.contains(target) && (target.id != 'sidebar-open')) {
+                sidebar.style.display = 'none';
+            }
+        });
         btn.onclick = async (ev) => {
             if (loaded) {
                 document.getElementById('sidebar').style.display = 'block';
@@ -139,5 +146,7 @@ const SidebarPlugin = (function() {
 })();
 
 document.addEventListener('datasette_init', function(ev) {
-    SidebarPlugin.init();
+    if (document.querySelectorAll('.crumbs a').length > 1) {
+        SidebarPlugin.init();
+    }
 });
