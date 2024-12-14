@@ -4,6 +4,7 @@
 # datasette-sidebar
 A simple plugin for Datasette that adds a sidebar with a list of tables and views.
 An icon opening the sidebar is added in the lower left corner:
+
 ![icon](screenshots/icon.png)
 
 ## Requirements
@@ -30,3 +31,4 @@ If you want to host locally you need to copy the sidebar.js file to your static 
 
 ## Screenshot
 
+![sidebar](screenshots/sidebar.png)
